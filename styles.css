@@ -1,145 +1,178 @@
 *{
- font-family: "Montserrat", sans-serif;
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- outline: none;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
 }
 
 
 .container-left{
     display: inline-block;
-}
-
-header{
-    margin-top: 44px;
-    margin-left: 76px;
-
+    width: 50%;
 }
 
 a{
+    width: 83px;
+    height: 21px;
     font-weight: 400;
-    width: 79px;
-    height: 29px;
     font-size: 14px;
-    margin-left: 23px;
+    margin-left: 32px;
     cursor: pointer;
 }
 
 button{
-    width: 130px;
-    height: 35px;
+     width: 124px;
+    height: 51px;
+    font-weight: 500;
+    font-size: 14px;
     border: none;
-    border-radius: 20.5px;
-    background: #665AE1;
+    border-radius: 6px;
+    background: #44ff1f;
+    margin-left: 32px;
+    margin-top: 47px;
     color: #ffffff;
-    margin-left: 23px;
     cursor: pointer;
 }
 
+
+header{
+    margin-left: 14px;
+    height: 110px;
+}
+
 img{
-    width: 500px;
-    height: 460px;
-    margin-left: 125px;
-    margin-top: 100px;
+    width: 460px;
+    height: 430px;
+    margin-left: 85px; 
+    margin-top: 80px;
+}
+
+
+.container-right{
+    display: inline-block;
+    width: 45%;
     
 }
 
-.container-right{
-display: inline-block;
-}
+
+
 
 h1{
-    width: 513px;
-    height: 140px;
-    font-weight: 900;
-    margin-left: 86px;
-    font-size: 100px;   
-    color: #515151; 
+    width: 582px;
+    height: 164px;
+    font-weight: 700;
+    font-size: 62px;
 }
-
-
-h2{
-    width: 448px;
-    height: 71px;
-    font-weight: 500;
-    margin-left: 86px;
-    font-size: 58px;
-    color: #515151; 
-}
-
-
 
 p{
-    font-family: Montserrat;
+    width: 493px;
+    height: 99px;
     font-weight: 400;
-    font-size: 24px;
-    width: 515px;
-    height: 87px;
-    margin-left: 86px;
+    margin-top: 47px;
+    font-size: 18px;
 }
- .botao{
-    width: 147px;
-    height: 60px;
-    border-radius: 25.5px;
-    background: #ADFF00;
-    border: none;
-    color: black;
-    font-weight: 700;
-    font-size: 17px;
-    margin-top: 65px;
-    margin-left: 86px;
-    cursor: pointer;  
+
+.botao-cta{
+    width: 112px;
+    margin-top: 55px;
+    height: 27px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #44ff1f;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: .7;
+}
+
+button:active{
+    opacity: .3;
+}
+
+
+a:hover{
+    opacity: .7;
+}
+
+a:active{
+    opacity: .3;
 }
 
 @media screen and (max-width: 900px) {
-    header{display: none;}      
-    
-img{
-    width: 354px;
-    height: 317px;
         
+    a{
+        display: none;
+    }
+
+    .container-left{
+        display: block;
+        max-width: 412px;
+        
+    }
+
+    .container-right{
+        display: block;
+        max-width: 412px;
+        height: 350px;
+        margin-top: 80px;
+    }
+        
+    h1{
+        text-align: center;
+        width: 278px;
+        height: 60px;
+        font-weight: 700;
+        font-size: 30px;
+        margin-left: 43px;
+        
+    }
+ 
+    p{
+        text-align: center;
+        width: 304px;
+        height: 165px;
+        font-size: 18px;
+        margin-left: 43px;
+        
+    }
+
+    img{
+        max-width: 312px;
+        height: 288px;
+        margin-left: 42px;
+        margin-top: 424px;
+        position: absolute;
+
+    }
+    
+    .div-pai{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    header{
+        height: 70px;
+        max-width: 412px;
+        margin: 0;
+    }
+
+    .botao-cta{
+        display: block;
+        text-align: center;
+        margin-left: 130px;
+        margin-top: 0;
+
+    }
+
+    button{
+        margin-left: 250px;
+        margin-top: 14px;
+    }
+
 }
-
-h1{
-    width: 608px;
-    height: 130px;
-    margin-left: 0;
-    text-align: center;
-
-
-}
-
-h2{
-    width: 608px;
-    height: 140px;
-    margin-left: 0;
-    text-align: center;
-}
-
-p{display: none;}
-
-.botao{
-        width: 350px;
-    height: 113px;
-    border-radius: 55.5px;
-    background: #ADFF00;
-    border: none;
-    color: black;
-    font-weight: 700;
-    font-size: 17px;
-    margin-top: 0px;
-    margin-left: 114px;
-
-
-}
-
-}
-
-
-
-
-
 
 
 
