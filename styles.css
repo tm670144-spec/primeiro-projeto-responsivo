@@ -1,19 +1,31 @@
 *{
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
+     font-family: "Poppins", sans-serif;
+     margin: 0;
+     padding: 0;
+     outline: none;
+     box-sizing: border-box;
 }
 
+.div-pai{
+    width: 100vw;
+    height: 100vh;
+}
 
 .container-left{
     display: inline-block;
-    width: 50%;
+    width: 40%;
+    margin-left: 42px;
 }
 
+header{
+   
+    width: 100%;
+
+}
+
+
 a{
-    width: 83px;
+    width: 79px;
     height: 21px;
     font-weight: 400;
     font-size: 14px;
@@ -22,157 +34,168 @@ a{
 }
 
 button{
-     width: 125px;
+    width: 124px;
     height: 51px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
+    background: #4cb538;
+    color: #ffffff;
     border: none;
     border-radius: 6px;
-    background: #44ff1f;
     margin-left: 32px;
     margin-top: 47px;
-    color: #ffffff;
+    margin-left: 42px;
     cursor: pointer;
 }
 
-
-header{
-    margin-left: 14px;
-    height: 110px;
+button:active{
+    opacity: 0.2;
 }
+
+
 
 img{
-    width: 460px;
-    height: 430px;
-    margin-left: 85px; 
-    margin-top: 80px;
+    width: 100%;
+    height: 467px;
 }
-
 
 .container-right{
     display: inline-block;
-    width: 45%;
+    width: 50%;
+    margin-left: 60px;
     
 }
 
 
-
-
 h1{
-    width: 582px;
-    height: 164px;
     font-weight: 700;
     font-size: 62px;
+    margin-bottom: 47px;
 }
 
 p{
-    width: 493px;
-    height: 99px;
     font-weight: 400;
-    margin-top: 47px;
     font-size: 18px;
+    margin-bottom: 55px;
+
 }
 
 .botao-cta{
-    width: 112px;
-    margin-top: 55px;
-    height: 27px;
     font-weight: 500;
     font-size: 18px;
-    color: #44ff1f;
+    width: 112px;
+    height: 27px;
+    color: #6fbf44;
     margin-left: 0;
-    cursor: pointer;
 }
 
-button:hover{
-    opacity: .7;
-}
-
-button:active{
-    opacity: .3;
+.botao-cta:active{
+    opacity: 0.2;
 }
 
 
-a:hover{
-    opacity: .7;
-}
+@media screen and (max-width: 900px){
+    
+   .div-pai{
+    display: flex;
+    flex-direction: column;
+   }
+   
+    .container-right{
+    display: block;
+    margin: 0;
+    padding: 0 60px 0 40px;
+    width:auto;
+    height: auto;
+    position: static;
+    order: 1;
+    margin-top: 124px;
+    
 
-a:active{
-    opacity: .3;
-}
+   }
 
-@media screen and (max-width: 900px) {
-        
+   .container-left{
+    width: 100%;
+    display: block;
+    margin: 0;
+    order: 2;
+   }
+   
+   header{
+    text-align: right;
+    padding: 25px 30px;
+    position: fixed;
+    top: 0;
+   }
+  
+   h1{
+        width: 100%;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 33px;
+        text-align: center;
+    }
+
+    .botao-cta{
+        font-size: 18px;
+        line-height: 100%;
+        text-align: center;
+        width: auto;
+    }
+
+
+    button{
+        width: 91px;
+        height: 31px;
+        font-size: 12px;
+        line-height: 100%;
+        margin: 0;
+    }
+
+    img{
+        max-width: 90%;
+        height: auto;
+        margin: auto;
+        position: static;
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     a{
         display: none;
     }
 
-    .container-left{
-        display: block;
-        max-width: 412px;
-        
-    }
-
-    .container-right{
-        display: block;
-        max-width: 412px;
-        height: 350px;
-        margin-top: 80px;
-    }
-        
-    h1{
-        text-align: center;
-        width: 278px;
-        height: 60px;
-        font-weight: 700;
-        font-size: 30px;
-        margin-left: 43px;
-        
-    }
- 
-    p{
-        text-align: center;
-        width: 304px;
-        height: 165px;
-        font-size: 18px;
-        margin-left: 43px;
-        
-    }
-
-    img{
-        max-width: 312px;
-        height: 288px;
-        margin-left: 42px;
-        margin-top: 424px;
-        position: absolute;
-
-    }
-    
-    .div-pai{
-        width: 100vw;
-        height: 100vh;
-    }
-
-    header{
-        height: 70px;
-        max-width: 412px;
-        margin: 0;
-    }
-
     .botao-cta{
         display: block;
-        text-align: center;
-        margin-left: 130px;
-        margin-top: 0;
-
     }
 
-    button{
-        margin-left: 250px;
-        margin-top: 14px;
-    }
-
+    
 }
-
-
-
